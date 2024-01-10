@@ -3,8 +3,8 @@
     --paragraph: "Oswald", sans-serif;
     --text-color: #011526;
     --secondary-color: #013440;
-    --nav-color:#2F6C73;
-    --tertiary-color: #548c8c;
+    --tertiary-color:#2F6C73;
+    --nav-color: #548c8c;
     --background-color: #BEBFBD;;
 }
 *{
@@ -40,6 +40,7 @@ nav ul{
 nav a, footer{
     display: block;
     text-align: center;
+    color: var(--text-color);
     padding:1.5rem;
     text-decoration:none;
 }
