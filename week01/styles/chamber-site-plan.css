@@ -1,0 +1,38 @@
+:root{
+    --headings: 'Noto Serif', serif;
+    --paragraph: 'Instrument Serif', serif;
+    --primary-color: #30A3B0;
+    --secondary-color: #3B767D;
+    --lighter-color: #10CEE3;
+    --writings-color: #32484A;
+    --darker-color: #2C3233;
+}
+.primary-color{
+    color: var(--primary-color)
+}
+.secondary-color{
+    color: var(--secondary-color)
+}
+.lighter-color{
+    color: var(--lighter-color)
+}
+.writings-color{
+    color: var(--writings-color)
+}
+.darker-color{
+    color: var(--darker-color)
+}
+.headings-font{
+    font-family: var(--headings);
+}
+.paragraph-font{
+    font-family: var(--paragraph);
+}
+h1,h2,h3,h4{
+    font-family: var(--headings);
+}
+body{
+    width:fit-content;
+    margin: auto;
+    font-family: var(--paragraph);
+}
