@@ -1,15 +1,13 @@
 @media screen and (min-width:640px){
-    nav{
+    nav ul{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding:20px;
+    }
+    nav ul li {
+        flex: 1 1 100%;
     }
     main{
         display: Grid;
         grid-template-columns:  1fr 1fr;
-        max-width: 700px;
-        margin: 1rem auto;
     }
     h1{
         grid-column: 1/3;
