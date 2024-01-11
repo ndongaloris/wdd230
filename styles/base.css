@@ -7,11 +7,38 @@
     --nav-color: #548c8c;
     --background-color: #BEBFBD;;
 }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: auto;
+    margin: 0 auto;
+}
+div span{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+header img{
+    border: 2px solid gray;
+    width: 150px;
+    justify-content: end;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+span{
+    text-align: center;
+}
+
 body{
     font-family: var(--paragraph);
     max-width: 1200px;
@@ -23,20 +50,31 @@ body{
 main section ul{
     list-style-type: none;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     font-family: var(--heading);
 }
+
 a:visited{
     color: var(--text-color);
 }
+
 nav{
+    grid-column: 1/3;
     font-weight: bolder;
     text-align: center;
     background-color: var(--nav-color);
 }
+
 nav ul{
     list-style-type: none;
 }
+
 nav a, footer{
     display: block;
     text-align: center;
@@ -44,10 +82,28 @@ nav a, footer{
     padding:1.5rem;
     text-decoration:none;
 }
+
 nav a:hover{
     background-color: var(--tertiary-color);
 }
+section{
+    border: 1px solid gray;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+h2{
+    padding: 1rem;
+    /* background-color: var(--nav-color); */
+    text-align: center;
+}
+section p{
+    text-align: center;
+    padding: 1rem;
+}
+section ul{
+    padding: 1rem;
 
+}
 footer{
     background-color: var(--nav-color);
     font-weight: bolder;
