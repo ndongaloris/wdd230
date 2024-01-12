@@ -6,6 +6,7 @@
     --lighter-color: #10CEE3;
     --writings-color: #32484A;
     --darker-color: #2C3233;
+    --link-color: #fff;
 }
 .primary-color{
     color: var(--primary-color)
@@ -28,11 +29,33 @@
 .paragraph-font{
     font-family: var(--paragraph);
 }
+.link-color{
+    background-color: black;
+    width: fit-content;
+    color: var(--link-color);
+}
 h1,h2,h3,h4{
     font-family: var(--headings);
+    color: var(--writings-color);
 }
 body{
     width:fit-content;
     margin: auto;
     font-family: var(--paragraph);
+    color: var(--secondary-color);
+}
+nav, footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--writings-color);
+    padding: 20px;
+    text-align: center;
+}
+nav a, footer{    
+    text-decoration: none;
+    font-family: var(--paragraph);
+    color: #fff;
+}
+a:hover{
+    background-color: var(--lighter-color);
 }
