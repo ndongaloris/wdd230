@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --headings: 'Noto Serif', serif;
+    --paragraph: 'Instrument Serif', serif;
+    --primary-color: #30A3B0;
+    --secondary-color: #3B767D;
+    --lighter-color: #10CEE3;
+    --writings-color: #32484A;
+    --darker-color: #2C3233;
+    --nav-color:#fff;
+}
+body{
+ 
+    margin:  0 auto;
+    font-family: var(--paragraph);
+    color: var(--writings-color);
+    /* background-color: var(--lighter-color); */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--headings);
+}
+header img{
+    display: none;
+}
+nav, footer{
+    background-color:var(--writings-color);
+    justify-content: space-around;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    text-decoration: none;
+    color: var(--nav-color);
+    padding: 20px;
+}
+nav li{
+    display: none;
+}
+a:hover{
+    background-color: var(--primary-color);
+}
+/* Menu */
+#menu::before{
+    content: "\2630";
+    font-size: 44px;
+}
+#menu.open::before{
+    content: 'X';
+}
+.open li{
+    display: block;
+} 
+#menu{
+    display: block;
+    color: var(--nav-color);
+}
+
+/* main */
+h1{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    color: var(--nav-color);
+    padding: 20px;
+}
