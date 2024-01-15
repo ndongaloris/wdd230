@@ -13,7 +13,6 @@
     --nav-color:#fff;
 }
 body{
- 
     margin:  0 auto;
     font-family: var(--paragraph);
     color: var(--writings-color);
@@ -52,6 +51,7 @@ a:hover{
     background-color: var(--primary-color);
 }
 /* Menu */
+
 #menu::before{
     content: "\2630";
     font-size: 44px;
@@ -70,6 +70,12 @@ a:hover{
 /* main */
 h1{
     text-align: center;
+}
+#join{
+    padding: 20px;
+    text-align: center;
+    color: var(--nav-color);
+    background-color: var(--writings-color);
 }
 
 /* footer */

@@ -21,6 +21,17 @@
     #menu{
         display: none;
     }
+    main{
+        position: relative;
+        overflow: hidden;
+        border: 2px solid red;
+    }
+    form{
+        position: absolute;
+        top:5px;
+        right:10px;
+        
+    }
     section{
         display: grid;
         grid-template-columns: 1fr 1fr;
