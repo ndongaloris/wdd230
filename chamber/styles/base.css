@@ -16,7 +16,6 @@ body{
     margin:  0 auto;
     font-family: var(--paragraph);
     color: var(--writings-color);
-    /* background-color: var(--lighter-color); */
 }
 h1,
 h2,
@@ -29,7 +28,7 @@ h6{
 header img{
     display: none;
 }
-nav, footer{
+nav, footer, figure{
     background-color:var(--writings-color);
     justify-content: space-around;
     text-align: center;
@@ -50,8 +49,8 @@ nav li{
 a:hover{
     background-color: var(--primary-color);
 }
-/* Menu */
 
+/* Menu */
 #menu::before{
     content: "\2630";
     font-size: 44px;
@@ -76,6 +75,27 @@ h1{
     text-align: center;
     color: var(--nav-color);
     background-color: var(--writings-color);
+}
+div figure img{
+    width: 100%;
+}
+div figure img:hover{
+    rotate: .05turn;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 1px;
+}
+figure{
+    color: var(--nav-color);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    padding: 20px;
+}
+figcaption{
+    padding: 10px;
 }
 
 /* footer */
