@@ -17,7 +17,7 @@ else if((todayDate - theDate) < 1) {
     visit.textContent = "Back so soon! Awesome!";
 }
 else{
-    visit.textContent = `You last visited ${todayDate - theDate} days ago.`;
+    visit.textContent = `You last visited ${todayDate - theDate} days ago.` ;
 }
 
 numVisits++;
