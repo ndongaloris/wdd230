@@ -70,6 +70,10 @@ a:hover{
 h1{
     text-align: center;
 }
+#discover h1{
+    grid-column: 1/2;
+    text-align: left;
+}
 #join{
     padding: 20px;
     text-align: center;
