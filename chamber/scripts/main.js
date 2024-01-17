@@ -8,8 +8,8 @@ hamButton.addEventListener('click', () =>{
 
 const visit = document.querySelector('#visit');
 let numVisits = Number(window.localStorage.getItem('count'))|| 0;
-let theDate = new Date().getDay()
 let todayDate = Number(window.localStorage.getItem('date')) || 0;
+let theDate = new Date().getDay();
 if (numVisits === 0){
     visit.textContent = "Welcome! Let us know if you have any questions.";
 }
