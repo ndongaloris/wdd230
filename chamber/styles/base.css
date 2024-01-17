@@ -84,9 +84,7 @@ div figure img{
     width: 100%;
 }
 div figure img:hover{
-    rotate: .05turn;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 1px;
+    box-shadow: 5px 5px 5px 5px gray;
 }
 figure{
     color: var(--nav-color);
