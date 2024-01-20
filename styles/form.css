@@ -26,7 +26,7 @@ fieldset legend{
     margin: 2rem 0;
 }
 #range{
-    color: var(--text-color);
+    color: #000080;
 }
 #rangevalues {
 	display: flex;
