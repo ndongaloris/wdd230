@@ -2,6 +2,8 @@
     --heading: "Playfair", sans-serif;
     --secondary-color: #013440;
     --nav-color: #548c8c;
+    --text-color: #011526;
+    --background-color: #BEBFBD;
 }
 #form{
     display: block;
@@ -23,14 +25,19 @@ fieldset legend{
     display: block;
     margin: 2rem 0;
 }
-
+#range{
+    color: var(--text-color);
+}
 #rangevalues {
 	display: flex;
 	margin: 0 0 1rem 15px;
 	width: 320px;
+    font-family: var(--heading);
 }
 #rangevalues option {
-	flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-family: var(--heading);
+    color: #000080;
 }
 
 label input{
