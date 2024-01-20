@@ -1,0 +1,53 @@
+:root{
+    --heading: "Playfair", sans-serif;
+    --secondary-color: #013440;
+    --nav-color: #548c8c;
+}
+#form{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+}
+fieldset{
+    border: thin solid var(--secondary-color);
+    border-radius: 10px;
+}
+fieldset legend{
+    font-family: var(--heading);
+}
+#form form{
+    padding: 0 0 0 2%;
+    margin: 0 0 0 2%;
+}
+#form .inputArea{
+    display: block;
+    margin: 2rem 0;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 1rem 15px;
+	width: 320px;
+}
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+label input{
+    display: block;
+    padding: .5rem;
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 5px;
+}
+.signBtn{
+    border: none;
+    background-color: var(--nav-color);
+    font-family: var(--heading);
+    padding: 1rem;
+    width: 96%;
+    max-width: 20rem;
+    margin: 1rem 0 1rem 3%;
+    border-radius: 4px;
+}
