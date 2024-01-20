@@ -21,13 +21,29 @@ modeButton.addEventListener('click', () =>{
         }
 })
 
-let numVisits = parseInt(window.localStorage.getItem('numVisits')) || 0;
-const visit = document.querySelector("#visit");
-if (parseInt(visit) === 0){
-    visit.textContent = `This is your very first time visiting`;
+// let numVisits = parseInt(window.localStorage.getItem('numVisits')) || 0;
+// const visit = document.querySelector("#visit");
+// if (parseInt(visit) === 0){
+//     visit.textContent = `This is your very first time visiting`;
+// }
+// else{
+//     visit.textContent = numVisits;
+// }
+// numVisits++;
+// localStorage.setItem("numVisits", numVisits);
+
+const pwd1 = document.querySelector('#pwd');
+const pwd2 = document.querySelector('#pwd2');
+const message = document.querySelector('#message');
+
+pwd2.addEventListener("focusout", checkSame);
+
+function checkSame(){
+    if(pwd1.value !== pwd2.value){
+        message.textContent = "The Password does not match";
+        pwd2.value = '';
+    }
+    else{
+        message.textContent= '';
+    }
 }
-else{
-    visit.textContent = numVisits;
-}
-numVisits++;
-localStorage.setItem("numVisits", numVisits);

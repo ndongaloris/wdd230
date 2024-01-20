@@ -44,6 +44,7 @@ label input{
 .signBtn{
     border: none;
     background-color: var(--nav-color);
+    color: var(--heading);
     font-family: var(--heading);
     padding: 1rem;
     width: 96%;
