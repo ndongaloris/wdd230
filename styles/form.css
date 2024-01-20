@@ -39,6 +39,10 @@ fieldset legend{
     font-family: var(--heading);
     color: #000080;
 }
+option{
+    color: #000080;
+
+}
 
 label input{
     display: block;
