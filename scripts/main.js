@@ -21,16 +21,16 @@ modeButton.addEventListener('click', () =>{
         }
 })
 
-// let numVisits = parseInt(window.localStorage.getItem('numVisits')) || 0;
-// const visit = document.querySelector("#visit");
-// if (parseInt(visit) === 0){
-//     visit.textContent = `This is your very first time visiting`;
-// }
-// else{
-//     visit.textContent = numVisits;
-// }
-// numVisits++;
-// localStorage.setItem("numVisits", numVisits);
+let numVisits = parseInt(window.localStorage.getItem('numVisits')) || 0;
+const visit = document.querySelector("#visit");
+if (parseInt(visit) === 0){
+    visit.textContent = `This is your very first time visiting`;
+}
+else{
+    visit.textContent = numVisits;
+}
+numVisits++;
+localStorage.setItem("numVisits", numVisits);
 
 const pwd1 = document.querySelector('#pwd');
 const pwd2 = document.querySelector('#pwd2');
