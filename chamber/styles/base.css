@@ -109,8 +109,91 @@ figcaption{
     padding: 10px;
 }
 
-/* footer */
+/* -------- footer ------- */
 footer{
     color: var(--nav-color);
     padding: 20px;
+}
+
+
+/* --------- Join ------- */
+
+fieldset{
+    margin: 0 2% 2% 3%;
+    padding: 0 1rem 2.5rem 1rem;
+    border-radius: 5px;
+    border: 10px solid #9E9E9E;
+}
+input, textarea, select{
+    display: block;
+    border: 5px solid #9E9E9E;
+}
+input{
+    padding: .5rem;
+    border-radius: 4px;
+}
+.personal{
+    display: block;
+    margin-top: 12px;
+}
+.signBtn{
+    margin: 0 0 0 3rem;
+    padding: 0.5rem 1.5rem;
+}
+#benefits table{
+    text-align: center;
+    border: none;
+    border-collapse: collapse;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 4%;
+}
+#benefits thead{
+    background-color: #000000;
+    color: #fff;
+    border-right: 1px solid black;
+}
+#benefits th{
+    font-family: var(--headings);
+    padding: 10px;
+}
+#benefits caption{
+    border-radius: 10px 10px 0 0;
+    font-family: var(--headings);
+    font-size: x-large;
+    background-color: var(--writings-color);
+    color: white;
+    padding: 5px;
+}
+#benefits tbody tr{
+    border-bottom: 1px solid black;
+}
+#benefits tbody tr td{
+    border-left: 1px solid black;
+    padding: 4px;
+}
+#benefits tbody tr td:last-child{
+    border-right: 1px solid black;
+}
+#benefits tbody tr:nth-child(even){
+    background-color: #9E9E9E;
+    color: black;
+}
+#join-page{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --------- Thank you page -------- */
+
+#thankYou {
+    border: 5px solid var(--writings-color);
+    text-align: center;
+    padding: 0 0 20px 0 ;
+}
+#thankYou h{
+    margin-top: 1rem;
+}
+#thankYou p{
+    margin: 1rem 0;
 }

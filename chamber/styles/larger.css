@@ -25,7 +25,7 @@
         position: relative;
         overflow: hidden;
     }
-    form{
+    #action{
         position: absolute;
         top:5px;
         right:10px;
@@ -82,5 +82,27 @@
         display: flex;
         justify-content: space-between;
     }
-
+    /* ----- Join Page ------ */
+    #join-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #join-page h1, #join-page #message{
+        grid-column: 1/3;
+    }
+    #join-form{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #benefits{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 8%;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
