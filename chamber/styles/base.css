@@ -137,7 +137,9 @@ input{
     margin-top: 12px;
 }
 .signBtn{
-    margin: 0 0 0 3rem;
+    max-width: 20rem;
+    width:96%;
+    margin: 0 0 0 1rem;
     padding: 0.5rem 1.5rem;
 }
 #benefits table{
