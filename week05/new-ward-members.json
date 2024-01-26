@@ -1,0 +1,18 @@
+{
+    "familyName":"Ndonga",
+    "movedWard":"2015-07-23",
+    "memberNumber": 2,
+    "bishopricVisited":false,
+    "familyMembers":[
+        {
+            "name": "Jared",
+            "gender":"Male",
+            "birthdate": "2001-03-03"
+        },
+        {
+            "name": "someone",
+            "gender": "Female",
+            "birthdate": "2001-12-12"
+        }
+    ]
+}
