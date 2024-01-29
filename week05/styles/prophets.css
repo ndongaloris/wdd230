@@ -1,0 +1,28 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+}
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+section {
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: #eee;
+    border: thin solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    max-width: 300px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
