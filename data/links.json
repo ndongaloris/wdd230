@@ -1,0 +1,102 @@
+{
+    "weeks":[
+        {
+            "week": "week 1",
+            "links":[
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Loris-Jared-Ndonga/pen/VwRaPJJ",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "links":[
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/Loris-Jared-Ndonga/pen/mdorMEY?editors=0110",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "B.O.M chapter"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "links":[
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Web Storage API - localStorage"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "links":[
+                {
+                    "url": "https://codepen.io/Loris-Jared-Ndonga/pen/gOEWzeK?editors=1100",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/CombinatorsW3School.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "form-start/index.html",
+                    "title": "Web Form"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "links":[
+                {
+                    "url": "https://codepen.io/Loris-Jared-Ndonga/pen/QWoOKMM",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        }
+
+    ]
+}

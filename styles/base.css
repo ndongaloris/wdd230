@@ -159,6 +159,11 @@ section ul{
     padding: 1rem;
     
 }
+section div{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
 
 /* footer */
 footer{

@@ -22,28 +22,67 @@ modeButton.addEventListener('click', () =>{
 })
 
 let numVisits = parseInt(window.localStorage.getItem('numVisits')) || 0;
-const visit = document.querySelector("#visit");
-if (parseInt(visit) === 0){
-    visit.textContent = `This is your very first time visiting`;
+
+const sectionInfo = document.querySelector('.information');
+
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-4.27&lon=15.28&units=imperial&appid=318b0a0b3e15694b7c687be6b0bcd797'
+
+async function apiFetch(url){
+    const response = await fetch(url);
+    try {
+        if (response.ok){
+            const data = await response.json();
+            displayWeather(data);
+            displayVisits();
+        }
+        else{
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
 }
-else{
-    visit.textContent = numVisits;
+
+function displayWeather(data){
+    const temp = data.main.temp;
+    const description = data.weather[0].description;
+    const icon = data.weather[0].icon;
+
+    let titlePart = document.createElement('h2')
+    titlePart.textContent = "Information";
+    
+    const figure = document.createElement('div');
+    
+    let wDescription = document.createElement('p')
+    const weatherIcon= document.createElement('img');
+    wDescription.textContent= `${temp}ºF - ${description}`;
+    
+    weatherIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
+    weatherIcon.alt = "Weather Icon";
+    
+    figure.appendChild(weatherIcon);
+    figure.appendChild(wDescription);
+    
+    sectionInfo.appendChild(titlePart);
+    sectionInfo.appendChild(figure);
+    
 }
-numVisits++;
-localStorage.setItem("numVisits", numVisits);
 
-const pwd1 = document.querySelector('#pwd');
-const pwd2 = document.querySelector('#pwd2');
-const message = document.querySelector('#message');
+function displayVisits(){
+    const visit = document.createElement('p');
 
-pwd2.addEventListener("focusout", checkSame);
-
-function checkSame(){
-    if(pwd1.value !== pwd2.value){
-        message.textContent = "The Password does not match";
-        pwd2.value = '';
+    if (parseInt(visit) === 0){
+        visit.textContent = `This is your very first time visiting`;
     }
     else{
-        message.textContent= '';
+        visit.textContent = `Visits: ${numVisits}`;
     }
+    numVisits++;
+    localStorage.setItem("numVisits", numVisits);
+
+    sectionInfo.appendChild(visit);
 }
+
+apiFetch(url);
