@@ -7,7 +7,7 @@ async function getLinks(){
     try{
         if (response.ok){
             const data = await response.json();
-            console.log(data);
+            displayLinks(data);
         }
         else{
             throw Error(await response.text());
@@ -17,4 +17,30 @@ async function getLinks(){
         console.log(error);
     }
 }
+
+function displayLinks(weeks){
+    const course = document.querySelector("#course");
+    weeks["weeks"].forEach(week => {
+        const li = document.createElement('li');
+        
+        var list = [];
+        week['links'].forEach(link =>{
+            const a = document.createElement('a');
+            a.textContent = `${link.title}`;
+            a.href = link.url;
+            list.push(a);    
+        })
+        
+        li.innerHTML = `${week.week}:`;
+        list.forEach(link =>{
+            li.appendChild(link);
+            if (list.indexOf(link) != list.length -1){
+                li.append(" |");
+            }
+        })
+
+        course.appendChild(li);
+    });
+}
+
 getLinks()

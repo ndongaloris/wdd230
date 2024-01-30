@@ -157,7 +157,9 @@ section p{
 }
 section ul{
     padding: 1rem;
-    
+}
+section li a{
+    margin-left: .5rem;
 }
 section div{
     display: flex;
