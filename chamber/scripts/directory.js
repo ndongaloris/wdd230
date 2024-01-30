@@ -23,7 +23,7 @@ async function getAPI(url){
         console.log(error);
     }
 }
-const main = document.querySelector('main');
+const main = document.querySelector('#directory');
 
 const mainHeader = document.createElement('h1');
 mainHeader.textContent = "Beto Na Beto Directory";
@@ -40,14 +40,16 @@ function populate(data){
 
         name.textContent = company.names;
         address.textContent = company.addresses;
+        
         links.href = company.website;
         links.textContent = company.website;
-        number.text = company.phone;
+        
+        number.textContent = company.phone;
 
         section.appendChild(name);
         section.appendChild(address);
-        section.appendChild(links);
         section.appendChild(number);
+        section.appendChild(links);
 
         main.appendChild(section);
     });

@@ -2,7 +2,7 @@
     "companies":[
         {
             "names": "Apple",
-            "addresses": "1 Apple Park Way · Cupertino, California · U.S.",
+            "addresses": "Cupertino, California · U.S.",
             "phone": " 1-800-692–7753",
             "website": "https://www.apple.com/",
             "icon": "https://ogimg.infoglobo.com.br/in/22942457-905-ff9/FT1086A/78194907_FILES-In-this-file-photo-taken-on-September-7-2016-the-Apple-logo-i.jpg",
@@ -11,7 +11,7 @@
         },
         {
             "names": "Amazon",
-            "addresses": "Seattle, Washington and Arlington County, Virginia, US",
+            "addresses": "Arlington County, Virginia, US",
             "phone": "1-888-280-4331",
             "website": "https://www.amazon.com/",
             "icon": "https://www.frontalot.com/img/icon/amazon.jpg",

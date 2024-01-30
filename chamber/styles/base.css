@@ -108,7 +108,22 @@ figure{
 figcaption{
     padding: 10px;
 }
-
+#directory{
+    margin-bottom: 10px;
+}
+#directory div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    gap: 100px;
+    padding: 10px 20px;
+    border-top: 1px solid black;
+}
+#directory div:last-child{
+    border-bottom: 1px solid black;
+}
+#directory div:nth-child(even){
+    background-color: var(--lighter-color);
+}
 /* -------- footer ------- */
 footer{
     color: var(--nav-color);
