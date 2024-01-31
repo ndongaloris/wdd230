@@ -47,7 +47,7 @@ function populate(data){
     data['companies'].forEach(company => {
         
         const section = document.createElement('div');
-        const name = document.createElement('p');
+        const name = document.createElement('h4');
         const links = document.createElement('a');
         const address = document.createElement('p');
         const number = document.createElement('p');
