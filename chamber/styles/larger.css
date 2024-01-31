@@ -105,4 +105,29 @@
         flex-wrap: wrap;
         width: 100%;
     }
+    /* ---------- directory --------- */
+    
+    #directory h1{
+        grid-column: 1/4;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+    .list div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .list div img{
+        display: none;
+    } 
+    .grid{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid div{
+        display: flex;
+        flex-direction: column;
+    }
 }

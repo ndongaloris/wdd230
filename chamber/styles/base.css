@@ -108,22 +108,48 @@ figure{
 figcaption{
     padding: 10px;
 }
-#directory{
+
+/* ------ directory ----- */
+
+.view{
+    text-align: center;
+}
+
+#directory #grid::before{
+    content: "\2637";
+    font-size: 44px;
+    color: var(--nav-color);
+    background-color: var(--writings-color);
+    padding: 5px;
+}
+#directory #list::before{
+    content: "\2630";
+    font-size: 44px;
+    color: var(--nav-color);
+    background-color: var(--writings-color);
+    padding: 5px;
+}
+
+
+#directory div{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+    box-shadow: 0 3px 3px 3px;
+    border-radius: 4px;
     margin-bottom: 10px;
 }
-#directory div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
-    gap: 100px;
-    padding: 10px 20px;
-    border-top: 1px solid black;
+
+#directory div img{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
 }
-#directory div:last-child{
-    border-bottom: 1px solid black;
-}
-#directory div:nth-child(even){
-    background-color: var(--lighter-color);
-}
+.list div img{
+    display: none;
+} 
+
 /* -------- footer ------- */
 footer{
     color: var(--nav-color);

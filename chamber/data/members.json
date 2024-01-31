@@ -1,20 +1,20 @@
 {
     "companies":[
         {
-            "names": "Apple",
+            "names": "Apple Inc.",
             "addresses": "Cupertino, California · U.S.",
             "phone": " 1-800-692–7753",
             "website": "https://www.apple.com/",
-            "icon": "https://ogimg.infoglobo.com.br/in/22942457-905-ff9/FT1086A/78194907_FILES-In-this-file-photo-taken-on-September-7-2016-the-Apple-logo-i.jpg",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png",
             "membership level": "Premium",
             "Type": "Computers and Electronics Manufacturing"
         },
         {
-            "names": "Amazon",
+            "names": "Amazon.com, Inc.",
             "addresses": "Arlington County, Virginia, US",
             "phone": "1-888-280-4331",
             "website": "https://www.amazon.com/",
-            "icon": "https://www.frontalot.com/img/icon/amazon.jpg",
+            "icon": "hhttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/220px-Amazon_logo.svg.png",
             "membership level": "Gold",
             "type": "Software Development"
         },
@@ -28,7 +28,7 @@
             "type": "Software Development"
         },
         {
-            "names": "Microsoft",
+            "names": "Microsoft Corporation",
             "addresses": "Redmond, Washington · U.S.",
             "phone": "1-800-642-7676",
             "website": "https://www.microsoft.com/",
@@ -41,27 +41,45 @@
             "addresses": "Los Gatos, California, U.S.",
             "phone": "1-844-505-2993",
             "website": "https://www.netflix.com/",
-            "icon": "https://th.bing.com/th/id/R.029f5838b2ca10ee9e706384352961c3?rik=jBdC5EO6zoxbXg&pid=ImgRaw&r=0",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/220px-Netflix_2015_logo.svg.png",
             "membership level": "Silver",
             "type": "Entertainment Providers"
         },
         {
-            "names": "Meta",
+            "names": "Meta Platforms, Inc.",
             "addresses": "Menlo Park, California, U.S.",
             "phone": "1-212-318-2000",
             "website": "https://about.meta.com/",
-            "icon": "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=g1YTKLJkHFkAX-HGyGo&_nc_ht=scontent-jnb2-1.xx&oh=00_AfBefLYVGtOT2s1YFfVL0ftctTFS_THD8I6PPFzHDJaSMg&oe=65BE6E79",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/240px-Meta_Platforms_Inc._logo.svg.png",
             "membership level": "Gold",
             "type": "Software Development"
         },
         {
-            "names": "PwC",
+            "names": "PricewaterhouseCoopers",
             "addresses": "United Kingdom",
             "phone": "1-678-419-13552",
             "website": "https://www.pwc.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/220px-PricewaterhouseCoopers_Logo.svg.png",
             "membership level": "Silver",
             "type": "Professional Services"
+        },
+        {
+            "names": "Deloitte",
+            "addresses": "London, England",
+            "phone": "44 (0)20 7936 3000",
+            "website": "www2.deloitte.com",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deloitte.svg/220px-Deloitte.svg.png",
+            "membership level": "Silver",
+            "type": "multinational professional services network"
+        },
+        {
+            "names": "LinkedIn Corporation",
+            "addresses": "Sunnyvale, California, U.S.",
+            "phone": "650-687-3600",
+            "website": "https://www.linkedin.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/200px-LinkedIn_2021.svg.png",
+            "membership level": "Silver",
+            "type": "Professional network services"
         }
     ]
 }
