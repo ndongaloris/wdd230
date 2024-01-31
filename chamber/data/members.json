@@ -14,7 +14,7 @@
             "addresses": "Arlington County, Virginia, US",
             "phone": "1-888-280-4331",
             "website": "https://www.amazon.com/",
-            "icon": "hhttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/220px-Amazon_logo.svg.png",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/220px-Amazon_logo.svg.png",
             "membership level": "Gold",
             "type": "Software Development"
         },
@@ -23,7 +23,7 @@
             "addresses": "Mountain View, California · U.S.",
             "phone": "1-650-253-0000",
             "website": "https://about.google/",
-            "icon": "https://pluspng.com/img-png/google-png-hd-google-wallpaper-desktop-background-3840.png",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png",
             "membership level": "Premium",
             "type": "Software Development"
         },
