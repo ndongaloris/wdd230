@@ -28,7 +28,7 @@ h6{
 header img{
     display: none;
 }
-nav, footer, figure{
+nav, footer{
     background-color:var(--writings-color);
     justify-content: space-around;
     text-align: center;
@@ -95,9 +95,56 @@ div figure img{
 div figure img:hover{
     box-shadow: 5px 5px 5px 5px gray;
 }
-figure{
+/* figure{
     color: var(--nav-color);
+    border: 1px solid black;
+} */
+
+.weather{
+    display: flex;
+    flex-direction: column;
 }
+.weather iframe{
+    width: 100%;
+}
+
+.weather .figure{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.weather h3, .weather h2{
+    justify-self: center;
+    align-self: center ;
+}
+.figure figure{
+    display: flex;
+    width: fit-content;
+
+}
+.forecast{
+    margin-top: 1rem;
+    text-align: center;
+    background-color: var(--writings-color);
+    color: var(--nav-color);
+    padding: 20px 0px 50px 0px ;
+}
+.forecast h2{
+    padding-bottom: 20px;
+}
+.forecast .temps{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.forecast figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #container{
     display: flex;
     flex-direction: column;

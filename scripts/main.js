@@ -67,7 +67,6 @@ function displayWeather(data){
     
     sectionInfo.appendChild(titlePart);
     sectionInfo.appendChild(figure);
-    
 }
 
 function displayVisits(){

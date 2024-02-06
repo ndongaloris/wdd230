@@ -6,7 +6,7 @@
             "phone": " 1-800-692–7753",
             "website": "https://www.apple.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png",
-            "membership level": "Premium",
+            "membership level": "Gold",
             "Type": "Computers and Electronics Manufacturing"
         },
         {
@@ -15,7 +15,7 @@
             "phone": "1-888-280-4331",
             "website": "https://www.amazon.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/220px-Amazon_logo.svg.png",
-            "membership level": "Gold",
+            "membership level": "Silver",
             "type": "Software Development"
         },
         {
@@ -24,7 +24,7 @@
             "phone": "1-650-253-0000",
             "website": "https://about.google/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png",
-            "membership level": "Premium",
+            "membership level": "Gold",
             "type": "Software Development"
         },
         {
@@ -33,7 +33,7 @@
             "phone": "1-800-642-7676",
             "website": "https://www.microsoft.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1920px-Microsoft_logo_%282012%29.svg.png",
-            "membership level": "Silver",
+            "membership level": "Gold",
             "type": "Software Development"
         },
         {
@@ -51,7 +51,7 @@
             "phone": "1-212-318-2000",
             "website": "https://about.meta.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/240px-Meta_Platforms_Inc._logo.svg.png",
-            "membership level": "Gold",
+            "membership level": "Silver",
             "type": "Software Development"
         },
         {
@@ -60,7 +60,7 @@
             "phone": "1-678-419-13552",
             "website": "https://www.pwc.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/220px-PricewaterhouseCoopers_Logo.svg.png",
-            "membership level": "Silver",
+            "membership level": "Bronze",
             "type": "Professional Services"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "44 (0)20 7936 3000",
             "website": "www2.deloitte.com",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deloitte.svg/220px-Deloitte.svg.png",
-            "membership level": "Silver",
+            "membership level": "Bronze",
             "type": "multinational professional services network"
         },
         {
@@ -78,7 +78,7 @@
             "phone": "650-687-3600",
             "website": "https://www.linkedin.com/",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/200px-LinkedIn_2021.svg.png",
-            "membership level": "Silver",
+            "membership level": "Bronze",
             "type": "Professional network services"
         }
     ]
