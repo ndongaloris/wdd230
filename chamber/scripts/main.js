@@ -138,12 +138,18 @@ async function member(members){
 }
 function spotlight(members){
     const spotlight = document.querySelector("#spotlights");
+    const already = new Set();
     for (let index = 0; index < 3; index++) {
         const randomIndex = Math.floor(Math.random() * members['companies'].length)
         const company = members['companies'][randomIndex];
         const membership = company['membership level']; 
         
         if (membership === "Silver" || membership === "Gold"){
+            if (already.has(randomIndex)){
+                index--;
+                continue;
+            }
+            already.add(randomIndex);
             const section = document.createElement('div');
             const name = document.createElement('h4');
             const links = document.createElement('a');
@@ -152,6 +158,7 @@ function spotlight(members){
             const logo = document.createElement("img");
             const figure = document.createElement('figure');
             const figcaption = document.createElement('figcaption');
+            
             name.textContent = company.names;
             address.textContent = company.addresses;
             
@@ -165,6 +172,7 @@ function spotlight(members){
 
             figure.appendChild(logo);
             section.setAttribute("class", "memb");
+
             figcaption.appendChild(name);
             figcaption.appendChild(address);
             figcaption.appendChild(number);
@@ -176,7 +184,7 @@ function spotlight(members){
             spotlight.appendChild(section);
         }
         else{
-            if (index > 0){
+            if (index >= 0){
                 index--;
             }
         }
@@ -189,6 +197,7 @@ function displayBanner(){
     const image = document.createElement("img");
     image.src = 'images/banner.webp';
     image.alt = 'white house chamber';
+    image.loading = 'lazy';
 
     banner.appendChild(image);
 
