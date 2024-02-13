@@ -26,6 +26,8 @@ const members = "https://ndongaloris.github.io/wdd230/chamber/data/members.json"
 function main(){
     apiFetch(url, forecast);
     member(members);
+    events();
+    subscribe();
     displayBanner();
 }
 async function apiFetch(url, cast){
@@ -55,7 +57,7 @@ function displayWeather(data){
     
     const figure = document.createElement('div');
     
-    let name = document.createElement('h2')
+    let name = document.createElement('h2');
     name.textContent = `${data.name.split(" ")[0]}, ${data.sys.country}`;
 
     let degree = document.createElement('h3');
@@ -63,7 +65,7 @@ function displayWeather(data){
     degree.textContent= `${temp}℃`;
     wDescription.textContent= `${description}`;
     
-    const fig = document.createElement('figure')
+    const fig = document.createElement('figure');
 
     const weatherIcon= document.createElement('img');
     weatherIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
@@ -118,9 +120,6 @@ function displayForecast(url){
     sectionInfo.appendChild(forecast);
 
 }
-
-
-
 async function member(members){
     const response = await fetch(members);
     try{
@@ -139,6 +138,7 @@ async function member(members){
 function spotlight(members){
     const spotlight = document.querySelector("#spotlights");
     const already = new Set();
+    
     for (let index = 0; index < 3; index++) {
         const randomIndex = Math.floor(Math.random() * members['companies'].length)
         const company = members['companies'][randomIndex];
@@ -192,35 +192,115 @@ function spotlight(members){
 
 }
 function displayBanner(){
+    const day = new Date().getDay();
+    const days = [1,2,3];
     const banner = document.querySelector("#banner");
+    
+    if (days.includes(day)){
+        const close = document.createElement("a");
+        close.className = 'close';
+        close.textContent = "X";
+        banner.appendChild(close);
+    
+        const image = document.createElement("img");
+        image.src = 'images/banner.webp';
+        image.alt = 'white house chamber';
+        image.loading = 'lazy';
+    
+        banner.appendChild(image);
+    
+        const section = document.createElement('div');
+    
+        const header = document.createElement('h2');
+        header.textContent = "Meet And Greet";
+    
+        const message = document.createElement('p');
+        message.textContent = "We're thrilled to invite you to an evening of networking and collaboration at our Chamber of Commerce Meet and Greet! 🌐 Connect with fellow professionals, explore new opportunities, and build lasting relationships.";
+        
+        const time = document.createElement('p');
+        time.textContent = "🗓️ Date: Wednesday    🕖 Time: 7:00 p.m."
+        
+        const bannerButton = document.createElement('button');
+        bannerButton.textContent = "Register Now";
+    
+        section.appendChild(header);
+        section.appendChild(message); 
+        section.appendChild(time); 
+        section.appendChild(bannerButton);
+    
+        banner.appendChild(section);
+    }
+    else{
+        banner.id = 'nobanner';
+    }
+    banner.addEventListener('click', ()=>{
+        banner.id = 'nobanner';
+        banner.textContent = ''
+    })
+}
+function events(){
+    const eventSection = document.querySelector('.event');
+
+    const header = document.createElement('h2');
+    header.textContent = "Current Event";
+
+    const firstP = document.createElement('p');
+    firstP.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores repellat ex cupiditate reprehenderit aut sint nulla alias omnis nihil officiis deleniti distinctio dicta eos vitae aperiam, quis beatae quaerat.";
+
+    const image = document.createElement('img');
+    image.src = 'images/event.webp';
+    image.alt = 'People taking part of business event';
+
+    const secondP = document.createElement('p');
+    secondP.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores repellat ex cupiditate reprehenderit aut sint nulla alias omnis nihil officiis deleniti distinctio dicta eos vitae aperiam, quis beatae quaerat.";
+
+    eventSection.appendChild(header);
+    eventSection.appendChild(firstP);
+    eventSection.appendChild(image);
+    eventSection.appendChild(secondP);
+
+}
+
+function subscribe(){
+    const eventSection = document.querySelector('.event');
+
+    const sections = document.createElement("div");
+    sections.id = "subscribe";
 
     const image = document.createElement("img");
-    image.src = 'images/banner.webp';
+    image.src = 'images/sub.webp';
     image.alt = 'white house chamber';
     image.loading = 'lazy';
 
-    banner.appendChild(image);
+    sections.appendChild(image);
 
     const section = document.createElement('div');
 
     const header = document.createElement('h2');
-    header.textContent = "Meet And Greet";
+    header.textContent = "Our Newsletter";
 
     const message = document.createElement('p');
-    message.textContent = "We're thrilled to invite you to an evening of networking and collaboration at our Chamber of Commerce Meet and Greet! 🌐 Connect with fellow professionals, explore new opportunities, and build lasting relationships.";
+    message.innerHTML = "🌟 Elevate Your Inbox with Exclusive Insights! <br> 📬 Be in the know and stay ahead of the curve!";
     
-    const time = document.createElement('p');
-    time.textContent = "🗓️ Date: Wednesday    🕖 Time: 7:00 p.m."
-    
-    const bannerButton = document.createElement('button');
-    bannerButton.textContent = "Register Now";
+    const form = document.createElement('form');
 
+    const input = document.createElement('input');
+    input.placeholder = 'myemail@email.com';
+    const button = document.createElement('button');
+    button.textContent = "Subscribe";
+
+    form.appendChild(input);
+    form.appendChild(button);
+
+    const bannerButton = document.createElement('button');
+    bannerButton.textContent = "Register Now"; 
+    
     section.appendChild(header);
     section.appendChild(message); 
-    section.appendChild(time); 
-    section.appendChild(bannerButton);
+    section.appendChild(form); 
+    sections.appendChild(section);
 
-    banner.appendChild(section);
+    eventSection.appendChild(sections);
 }
 
 main();

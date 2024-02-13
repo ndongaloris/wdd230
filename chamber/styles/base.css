@@ -24,6 +24,7 @@ h4,
 h5,
 h6{
     font-family: var(--headings);
+    margin: 0 0 10px 0;
 }
 header img{
     display: none;
@@ -50,7 +51,7 @@ a:hover{
     background-color: var(--primary-color);
 }
 
-/* Menu */
+/* ---------- Menu ------------ */
 #menu::before{
     content: "\2630";
     font-size: 44px;
@@ -66,9 +67,18 @@ a:hover{
     color: var(--nav-color);
 }
 
-/* main */
+/* ----------- main ------------- */
 h1{
     text-align: center;
+}
+#action{
+    position: absolute;
+    top:5px;
+    right:10px;    
+}
+#action button{
+    background-color: var(--nav-color);
+    color: var(--writings-color);
 }
 #discover h1{
     grid-column: 1/2;
@@ -95,11 +105,54 @@ div figure img{
 div figure img:hover{
     box-shadow: 5px 5px 5px 5px gray;
 }
-/* figure{
-    color: var(--nav-color);
-    border: 1px solid black;
-} */
 
+/* --------- event Home ------------- */
+.event{
+    overflow: hidden;
+}
+.event img{
+    width: 200px;
+}
+.event #subscribe{
+    margin: 0 auto;
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    color: var(--nav-color);
+    background-color: var(--writings-color);
+}
+.event #subscribe img{
+    display: none;
+}
+.event p:not(#subscribe p){
+    text-align: center;
+    border: 5px double var(--writings-color);
+    align-self: center;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px ;
+    justify-self: center;
+}
+.event img:not(#subscribe img){
+    border: 5px double var(--writings-color);
+    width: 200px;
+    margin: 0 25%;
+}
+.event #subscribe form{
+    display: flex;
+    gap: 2px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+.event #subscribe button{
+    background-color: white;
+    border: 5px solid gray;
+    padding: 5px;
+}
+
+/* -------- weather and forecast-------- */
 .weather{
     display: flex;
     flex-direction: column;
@@ -107,11 +160,13 @@ div figure img:hover{
 .weather iframe{
     width: 100%;
 }
-
 .weather .figure{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 10px double var(--writings-color);
+    margin: 10px 5px;
+    padding: 10px;
 }
 .weather h3, .weather h2{
     justify-self: center;
@@ -120,7 +175,6 @@ div figure img:hover{
 .figure figure{
     display: flex;
     width: fit-content;
-
 }
 .forecast{
     margin-top: 1rem;
@@ -151,6 +205,8 @@ div figure img:hover{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
+
+/* ------ spotlights Home --------- */
 #spotlights{
     display: flex;
     flex-direction: column;
@@ -177,16 +233,16 @@ div figure img:hover{
 figcaption{
     padding: 10px;
 }
-  /* ------- banner --------- */
+  /* ------- banner Home--------- */
 #banner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 100px;
-    /* text-align: center; */
+    padding: 10px;
     color: var(--nav-color);
     background-color: var(--writings-color);
-
+    position: relative;
+    margin-bottom: 20px;
 }
 #banner img{
     display: none;
@@ -205,8 +261,18 @@ figcaption{
     background-color: var(--nav-color);
     font-weight: bolder;
 }
-/* ------ directory ----- */
+#banner a {
+    position: absolute;
+    top:0;
+    right: 0;
+    border: 1px solid var(--nav-color);
+    color: var(--nav-color);
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+}
 
+/* ------ directory ----- */
 .view{
     text-align: center;
     margin-bottom: 40px;
@@ -226,8 +292,6 @@ figcaption{
     background-color: var(--writings-color);
     padding: 5px;
 }
-
-
 #directory .grid div, #directory .list div{
     width: 90%;
     padding: 10px;
@@ -237,7 +301,6 @@ figcaption{
     border-radius: 4px;
     margin-bottom: 10px;
 }
-
 #directory div img{
     width: 100%;
     height: 200px;
@@ -252,9 +315,7 @@ footer{
     padding: 20px;
 }
 
-
 /* --------- Join ------- */
-
 fieldset{
     margin: 0 2% 2% 3%;
     padding: 0 1rem 2.5rem 1rem;
@@ -276,7 +337,7 @@ input{
 .signBtn{
     max-width: 20rem;
     width:96%;
-    margin: 0 0 0 1rem;
+    margin: 0 0 1rem 1rem;
     padding: 0.5rem 1.5rem;
 }
 #benefits table{
@@ -324,7 +385,6 @@ input{
 }
 
 /* --------- Thank you page -------- */
-
 #thankYou {
     border: 5px solid var(--writings-color);
     text-align: center;
