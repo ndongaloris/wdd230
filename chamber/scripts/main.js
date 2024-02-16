@@ -1,27 +1,8 @@
-// const visit = document.querySelector('#visit');
-// let numVisits = Number(window.localStorage.getItem('count'))|| 0;
-// let todayDate = Number(window.localStorage.getItem('date')) || 0;
-// let theDate = new Date().getDay();
-// if (numVisits === 0){
-//     visit.textContent = "Welcome! Let us know if you have any questions.";
-// }
-// else if((todayDate - theDate) < 1) {
-//     visit.textContent = "Back so soon! Awesome!";
-// }
-// else{
-//     visit.textContent = `You last visited ${todayDate - theDate} days ago.` ;
-// }
-
-// numVisits++;
-// localStorage.setItem('count', numVisits);
-// localStorage.setItem('date', theDate);
 const sectionInfo = document.querySelector('.weather');
-
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-4.27&lon=15.28&units=metric&dt=1586468027&appid=318b0a0b3e15694b7c687be6b0bcd797'
 const forecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=-4.27&lon=15.2&units=metric&appid=318b0a0b3e15694b7c687be6b0bcd797';
 const members = "https://ndongaloris.github.io/wdd230/chamber/data/members.json";
-
 
 function main(){
     apiFetch(url, forecast);
